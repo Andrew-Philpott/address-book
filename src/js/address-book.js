@@ -1,8 +1,6 @@
-// Business Logic for AddressBook ---------
 export class AddressBook {
   constructor() {
-    this.contacts = [],
-    this.currentId = 0;
+    (this.contacts = []), (this.currentId = 0);
   }
 
   addContact(contact) {
@@ -16,7 +14,7 @@ export class AddressBook {
   }
 
   findContact(id) {
-    for (let i=0; i< this.contacts.length; i++) {
+    for (let i = 0; i < this.contacts.length; i++) {
       if (this.contacts[i]) {
         if (this.contacts[i].id == id) {
           return this.contacts[i];
@@ -27,7 +25,7 @@ export class AddressBook {
   }
 
   deleteContact(id) {
-    for (let i=0; i< this.contacts.length; i++) {
+    for (let i = 0; i < this.contacts.length; i++) {
       if (this.contacts[i]) {
         if (this.contacts[i].id == id) {
           delete this.contacts[i];

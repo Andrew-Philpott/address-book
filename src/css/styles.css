@@ -1,55 +1,67 @@
-h1 {
-  color: red;
+#addressbook-header img {
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+#main-navbar {
+  background-color: #e3f2fd;
+  margin-bottom: 20px;
+}
 #show-contact {
   display: none;
 }
 #add-contact-button {
+  border-radius: 2px;
   float: right;
+  width: 33%;
 }
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px;
   font-size: 16px;
   border: none;
   cursor: pointer;
 }
-
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+#name-container {
+  display: flex;
+  justify-content: space-between;
+}
+#name-container div {
+  width: 49%;
+}
+.pointer {
+  cursor: pointer;
+}
+#no-result-text {
+  font-style: italic;
+}
+#add-contact-container {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+#contacts-container {
+  height: 100%;
+  width: 100%;
+  display: none;
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+#show-contact {
+  display: none;
 }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+#contacts-list-button {
+  display: none;
+}
+#remove-contact {
+  float: right;
+}
+#contact-buttons button:last-of-type {
+  float: right;
+}
+#home-container p {
+  font-style: italic;
+  font-weight: bold;
 }
